@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JYWu's Midterm Project Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        img
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 1;
+        }
+        body
+        {
+            background-image: url(./img/background-img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        button.btn-outline
+        {
+            border-color: #B28FCE;
+            color: #77428D;
+        }
+        audio
+        {
+            filter: invert(62%) sepia(33%) saturate(450%) hue-rotate(230deg) brightness(95%) contrast(80%);
+            border-radius: 5px;
+            display: block;
+            width: 200px;
+            height: 30px;
+            margin: 10px 10px 5px 10px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.min.js"></script>
+    <script>
+        L2Dwidget.init
+        ({
+            "model": {
+                jsonPath: "https://unpkg.com/live2d-widget-model-hibiki@1.0.5/assets/hibiki.model.json",
+                "scale": 0.8
+            },
+            "display": 
+            {
+                "position": "right",
+                "width": 200,
+                "height": 360, 
+                "hOffset": 0,
+                "vOffset": 0
+            },
+            "mobile": 
+            {
+                "show": true,
+                "scale": 0.5
+            },
+            "react": 
+            {
+                "opacityDefault": 0.7,
+                "opacityOnHover": 0.2
+            }
+        });
+    </script>   
+</head>
+<body>
+    <div class="container sticky-top">
+        <nav class="navbar navbar-light" style="background-color: rgb(255, 247, 248, 0.9); border-radius: 5px;">
+            <a class="navbar-brand" href="#" style="color: #E1CDE4;">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                My Home Page
+            </a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Fake Search..." aria-label="Search">
+                <button class="btn btn-outline my-2 my-sm-0" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+        </nav>
+    </div>
+    <div class="container"><br></div>
+    <div class="container">
+        <div class="row content">
+            <div class="col-sm-3 background">
+                <div class="card" style="border-radius: 5px; background-color: rgb(255, 247, 248, 0.9);">
+                    <img src="./img/img1.jpg" width="200" height="200" style="margin-top: 15px; margin-bottom: 10px; border-radius: 5px;">
+                    <p style="text-align: center; margin-bottom: 10px;">
+                        Wu Junyu <br>
+                        ABCT, Polyu
+                    </p>
+                    <img src="https://img.shields.io/badge/build-passing-brightgreen" style="margin-bottom: 10px">
+                    <p style="text-align: center; margin-bottom: 0;">
+                        <a href="mailto:18080998d@connect.polyu.hk" title="Email me" style="text-decoration: none; color: #B28FCE;">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        &emsp;
+                        <a href="https://github.com/Eddie123e" title="View my Github" style="text-decoration: none; color: #B28FCE;">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                        &emsp;
+                        <a href="http://www.cmsolab.com/" title="Research group page" style="text-decoration: none; color: #B28FCE;">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </a>
+                        &emsp;
+                        <a href="#" data-toggle="modal" title="Get my CV" data-target="#Modal-CV" style="text-decoration: none; color: #B28FCE;">
+                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                        </a>
+
+                        <div class="modal fade" id="Modal-CV" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">My CV</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        It should not be here...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <br>
+                <div class="card" style="border-radius: 5px; background-color: 	rgb(255, 247, 248, 0.9);">
+                    <p style=" text-align: center; margin: auto;">
+                        <audio controls>
+                            <source src="./audio/audio1.mp3" type="audio/mpeg">
+                        </audio>
+                        Some music I like
+                    </p>
+                </div>
+                <br>
+                <div class="card" style="border-radius: 5px; background-color: 	rgb(255, 247, 248, 0.9);">
+                    <h4 class="text-center" style="margin-top: 15px; margin-bottom: 0px; color: #77428D;">
+                        Like this page?
+                    </h4>
+                    <div class="text-center" style="margin-top: 0; margin-bottom: 10px;">
+                        <button class="btn" data-toggle="modal" data-target="#Modal-like" style="width: 30px; height: 30px; color: #B28FCE;">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        </button>
+                        &emsp;
+                        <button class="btn" data-toggle="modal" data-target="#Modal-dislike" style="width: 30px; height: 30px; color: #B28FCE;">
+                            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                        </button>
+                        &emsp;
+                        <button class="btn" data-toggle="modal" data-target="#Modal-comment" style="width: 30px; height: 30px; color: #B28FCE;">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="modal fade" id="Modal-like" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Liked</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Thank you!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Modal-dislike" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Disliked</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Oh no...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Modal-comment" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Want to give some comment?</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <input class="form-control" type="search" placeholder="Write your comment here">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline" data-dismiss="modal">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="border-radius: 5px; background-color: 	rgb(255, 247, 248, 0.9); text-align: center;">
+                    Build with:
+                    <p style="margin-bottom: 8px;">
+                        <i class="fa fa-html5" aria-hidden="true" style="color: #77428D;" title="HTML"></i>
+                        &emsp;
+                        <i class="fa fa-css3" aria-hidden="true" style="color: #77428D;" title="CSS"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-9 background">
+                <div class="card" style="border-radius: 5px; background-color:rgb(255, 247, 248, 0.9);">
+                    <h3 class="text-center" style="margin: 25px; color: #77428D; text-shadow: 1.5px 1.5px 1px #2EA9DF;">About me</h3>
+                    <h5 style="margin: 10px 40px 10px 40px; color: #B28FCE;">
+                        <i class="fa fa-user-circle-o fa-fw" aria-hidden="true"></i>
+                        <b>BIOGRAPHY</b>
+                    </h5>
+                    <p style="margin-left: 60px; margin-right: 40px; margin-bottom: 0;">
+                        I, Wu Junyu, am currently a year-3 student major in Chemical Technology, in ABCT, PolyU. Besides, I worked in
+                        the CMSO lab as a student helper. I started the minor in computing in Feb, 2020 and I am taking COMP3421 
+                        Web Application Design and Development in this semester.
+                    </p>
+                    <h5 style="margin: 10px 40px 10px 40px; color: #B28FCE;">
+                        <i class="fa fa-lightbulb-o fa-fw" aria-hidden="true"></i>
+                        <b>INTEREST</b>
+                    </h5>
+                    <ul style="margin-left: 40px; margin-right: 40px; margin-bottom: 0;">
+                        <li>
+                            <i class="fa fa-flask fa-fw" aria-hidden="true"></i>
+                            Chemistry ( my major, of course ... )
+                        </li>
+                        <li>
+                            <i class="fa fa-code fa-fw" aria-hidden="true"></i>
+                            Computer skills ( currently challenging
+                            <a href="https://www.gentoo.org/">Gentoo</a>
+                            ... )
+                        </li>
+                        <li>
+                            <i class="fa fa-wheelchair-alt fa-fw" aria-hidden="true"></i>
+                            Math ( lethal dosage of group theory ... )
+                        </li>
+                        <li>
+                            <i class="fa fa-film fa-fw" aria-hidden="true"></i>
+                            Animes ( Good ... )
+                        </li>
+                    </ul>
+                    <h5 style="margin: 10px 40px 10px 40px; color: #B28FCE;">
+                        <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i>
+                        <b>Recomendations</b>
+                    </h5>
+                    <div style="margin-left: 60px; margin-right: 40px; margin-bottom: 15px; text-align: center; ">
+                        <table style="width: 100%; table-layout: fixed;">
+                            <tr>
+                                <th>Book</th>
+                                <th>Anime</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="./img/img2.jpg" width="125px" height="164px">
+                                    sed & awk, 2nd Edition<br>
+                                    by Dale Dougherty, Arnold Robbins
+                                </td>
+                                <td>
+                                    <img src="./img/img3.jpeg" width="125px" height="164px">
+                                    Majo no Tabitabi<br>
+                                    by Jougi Shiraishi
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
